@@ -12,23 +12,6 @@
     <button onclick="draw()">おみくじを引く</button>
     <p>今年のあなたの運勢は、<span id="fortune" class="fortune">大吉</span>です！</p>
   </div>
-  <script>
-    const results = [
-      '大吉',
-      '小吉',
-      '大吉',
-      '中吉',
-      '小吉',
-      '凶'
-    ]
-    function draw() {
-      const key = Math.floor(Math.random()*results.length)
-      console.log(key)
-      const fortune = document.getElementById("fortune")
-      fortune.textContent = results[key]
-    }
-  </script>
-
-  <!-- Math.random()乱数の出力によく使う -->
+  <script src="main.js"></script>
 </body>
 </html>
